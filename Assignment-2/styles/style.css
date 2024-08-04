@@ -1,0 +1,118 @@
+.formOuterBorder{
+    border:20px solid rgb(28,100,112);
+    margin: 0 auto;
+    width:700px;
+    padding-bottom:50px;
+    background-color: #f2f2f2;
+    font-size:20px;
+}
+
+
+.form-name{
+    text-align:center;
+}
+
+
+form{
+   margin: 0 auto;
+    width: 700px;
+}
+
+
+.form-block{
+  
+   padding:10px 0px 10px 10px;
+    background-color:white;
+}
+
+
+.text-color{
+    color:darkgreen;
+    font-weight: bold;;
+}
+
+.name-block,.password-block,.gender-hobbies-block,.source-of-income-block,.upload-profile-age-block{
+    display:flex;
+}
+
+.name,.password,.source-of-income,.range-of-income,.upload-profile,.age{
+    display:flex;
+    width:49%;
+    flex-direction:column;
+    margin:10px;
+}
+
+.gender-list,.hobbies-list{
+    width:49%;
+    margin:5px;
+}
+
+.inputbox{
+    padding:5px;
+    font-size:15px;
+}
+
+.email-block{
+    margin:10px;
+}
+
+.bio-block{
+    margin:10px;
+}
+
+.Email,.textbio{
+    width:98%;
+    padding:5px;
+    font-size:15px;   
+}
+
+.money-range{
+    width:80%;
+}
+
+.money-btn{
+    color:white;
+    background-color:green;
+}
+
+.button{
+    float:right;
+    color:white;
+    background-color: rgb(12, 158, 129);
+    padding:10px;
+    margin-top:10px;
+    text-align: center;
+    margin-right:20px;
+    border-radius: 10px;
+    width:100px;
+    border-width:0;
+}
+
+
+@media only screen and (max-width: 480px) {
+    body {
+      background-color: lightblue;
+    }
+    .name,.password,.source-of-income,.range-of-income,.upload-profile,.age,.gender,.checkbox{
+        width:95%;
+        flex-direction:column;
+        margin:10px;
+    }
+    .Email,.textbio{
+        width:95%;
+
+    }
+.name-block,.password-block,.gender-hobbies-block,.source-of-income-block,.upload-profile-age-block{
+    flex-direction: column;
+
+  }
+  .button-block{
+  display:flex;
+  justify-content:center;
+  }
+
+  .formOuterBorder{
+    padding-bottom:20px;
+
+  }
+}

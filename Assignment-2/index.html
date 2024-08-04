@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="formOuterBorder">
+      <h1 class="form-name">Create Account</h1>
+      <form>
+        <div class="form-block">
+          <div class="name-block">
+            <div class="name">
+              <label for="fname" class="text-color">First name*</label>
+              <input
+                type="text"
+                class="inputbox"
+                id="fname"
+                placeholder="enter your first name"
+              />
+            </div>
+
+            <div class="name">
+              <label class="text-color" for="lname">Last name*</label>
+              <input
+                type="text"
+                id="lname"
+                class="inputbox"
+                placeholder="enter your last name"
+              />
+            </div>
+          </div>
+          <div class="email-block">
+            <label for="email" class="text-color">Email*</label><br />
+            <input
+              type="email"
+              id="email"
+              class="Email"
+              placeholder="enter your email"
+            />
+          </div>
+
+          <div class="password-block">
+            <div class="password">
+              <label for="password" class="text-color">Password*</label>
+              <input
+                type="password"
+                id="password"
+                class="inputbox"
+                placeholder="enter your password"
+              />
+            </div>
+            <div class="password">
+              <label for="confirmpassword" class="text-color"
+                >Confirm Password*</label
+              >
+              <input
+                type="password"
+                id="confirmpassword"
+                class="inputbox"
+                placeholder="enter your password again"
+              />
+            </div>
+          </div>
+          <div class="gender-hobbies-block">
+            <div class="gender-list">
+              <label class="text-color">Gender</label><br />
+              <input type="radio" id="female" name="gender" />
+              <label for="female">Female</label>
+              <input type="radio" id="male" name="gender" />
+              <label for="male">Male</label>
+            </div>
+            <div class="hobbies-list">
+              <label class="text-color">Hobbies</label><br />
+              <input type="checkbox" id="music" name="hobbies" />
+              <label for="music">Music</label>
+              <input type="checkbox" id="sports" name="hobbies" />
+              <label for="sports">Sports</label>
+              <input type="checkbox" id="travel" name="hobbies" />
+              <label for="travel">Travel</label>
+              <input type="checkbox" id="movies" name="hobbies" />
+              <label for="movies">Movies</label>
+            </div>
+          </div>
+          <div class="source-of-income-block">
+            <div class="source-of-income">
+              <label for="source" class="text-color">Source of Income</label>
+              <select id="source" class="inputbox">
+                <option value="Employed">Employed</option>
+                <option value="intern">Business</option>
+              </select>
+            </div>
+            <div class="range-of-income">
+              <label for="source" class="text-color">Income</label>
+              <div class="range-slide">
+                <input type="range" class="money-range" />
+                <span class="money-btn">20K</span>
+              </div>
+            </div>
+          </div>
+          <div class="upload-profile-age-block">
+            <div class="upload-profile">
+              <label for="uploadProfilePicture" class="text-color"
+                >Upload Profile picture</label
+              >
+              <input type="file" class="inputbox" />
+            </div>
+            <div class="age">
+              <label for="age" class="text-color">Age</label>
+              <input type="number" id="age" class="inputbox" />
+            </div>
+          </div>
+          <div class="bio-block">
+            <label for="bio" class="text-color">Bio</label><br />
+            <textarea class="textbio" id="bio" rows="4" cols="40"></textarea
+            ><br />
+          </div>
+        </div>
+        <div class="button-block">
+          <input type="submit" value="create" class="button" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
