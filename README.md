@@ -4,6 +4,8 @@ Assignment - 1 Time Table
 
 <img width="743" alt="Time Table" src="https://github.com/user-attachments/assets/836c0bbf-66bc-4d22-b07d-c5277face88e">
 
+<img width="951" alt="image" src="https://github.com/user-attachments/assets/cdc38657-e38e-4c31-9f8d-388aa650cb89">
+
 
 Assignment - 2 Create Account Form
 
