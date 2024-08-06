@@ -15,7 +15,12 @@
 
 # Assignment - 3 calculator using Bootstrap
 
-![image](https://github.com/user-attachments/assets/d708a82e-5d37-4230-b362-6c1b21b5ee2b)
+![image](https://github.com/user-attachments/assets/d708a82e-5d37-4230-b362-6c1b21b5ee2b) 
+
+<img width="387" alt="image" src="https://github.com/user-attachments/assets/3a274208-4069-4569-88fa-221e8a00adee">
+
+
+
 
 
 # Assignment -4 Building Profile
