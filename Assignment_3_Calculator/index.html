@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5 calculator-card width-fit-content">
+                <div class="card col-md-12 ">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <img src="./assets/images/calculator-fill.svg" alt="Calculator_Image" class="cal-image">
+                            <h3 class="card-title">Calculator</h3>
+                            <div class="btn-group">
+                                <button class="btn btn-outline-secondary btn-sm r-p" onclick="minimizeCalculator()">_</button>
+                                <button class="btn btn-outline-secondary btn-sm r-p" onclick="maximizeCalculator()">□</button>
+                                <button class="btn btn-outline-secondary btn-sm r-p" onclick="closeCalculator()">×</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <nav class="nav justify-content-left mb-3 ">
+                            <div class="row">
+                                <a class="nav-link" href="#"><u>V</u>iew</a>
+                                <a class="nav-link" href="#"><u>E</u>dit</a>
+                                <a class="nav-link" href="#"><u>H</u>elp</a>
+                            </div>
+                        </nav>
+
+                        <div class="form-group">
+                            <input type="text" id="result" class="form-control" readonly>
+                        </div>
+
+                        <div class="btn-group d-flex mb-2" role="group">
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="clearMemory()">MC</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="recallMemory()">MR</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="storeMemory()">MS</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="addToMemory()">M+</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="subtractFromMemory()">M-</button>
+                        </div>
+
+                        <div class="btn-group d-flex mb-2" role="group">
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="">&larr;</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="clearEntry()">CE</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="clearResult()">C</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="toggleSign()">±</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="calculateSquareRoot()">√</button>
+                        </div>
+
+                        <div class="btn-group d-flex mb-2" role="group">
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="appendNumber('7')">7</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="appendNumber('8')">8</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="appendNumber('9')">9</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="setOperation('/')">/</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="setOperation('%')">%</button>
+                        </div>
+
+                        <div class="btn-group d-flex mb-2" role="group">
+                            <button type="button" class="btn btn-secondary r-p btn-size " onclick="appendNumber('4')">4</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size " onclick="appendNumber('5')">5</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size " onclick="appendNumber('6')">6</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size " onclick="setOperation('*')">*</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size " onclick="calculateInverse()">1/x</button>
+                        </div>
+
+                    <!-- </div> -->
+
+                        <!-- <div class="row">
+                            <div class="w-75 mx-2">
+                                <div class="row mb-1">
+                                    <div class="col-md-3 mx-0 px-1"><button type="button" class="button mx-0 btn  btn-block btn-secondary" onclick="append(1)">1</button></div>
+                                    <div class="col-md-3 mx-0 px-1"><button type="button" class="button mx-0 btn  btn-block btn-secondary" onclick="append(2)">2</button></div>
+                                    <div class="col-md-3 mx-0 px-1"><button type="button" class="button mx-0 btn  btn-block btn-secondary" onclick="append(3)">3</button></div>
+                                    <div class="col-md-3 mx-0 px-1"><button type="button" class="button mx-0 btn  btn-block btn-secondary" onclick="append('-')">-</button></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mx-0 px-1"><button type="button" class="button btn  btn-block btn-secondary" onclick="append(0)">0</button></div>
+                                    <div class="col-md-3 mx-0 px-1"><button type="button" class="button btn  btn-block btn-secondary" onclick="append('.')">.</button></div>
+                                    <div class="col-md-3 mx-0 px-1"><button type="button" class="button btn  btn-block btn-secondary" onclick="append('+')">+</button></div>
+                                </div>
+                            </div>
+                            <div class="width-20 mx-1">
+                                <div class="mx-0 px-1 h-100"> <button  type="button" class="button btn  btn-bloc h-100 w-100 btn-secondary " onclick="calculateResult()">=</button> </div> 
+                            </div>
+                        </div> -->
+
+                        <div class="btn-group d-flex mb-2" role="group">
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="appendNumber('1')">1</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="appendNumber('2')">2</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="appendNumber('3')">3</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="setOperation('-')">-</button>
+                            <button type="button" class="btn btn-secondary r-p btn-eq-size" onclick="calculateResult()">=</button>
+                        </div>
+                        
+                        <div class="btn-group d-flex" role="group">
+                            <button type="button" class="btn btn-secondary r-p btn-zero-size" onclick="appendNumber('0')">0</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="appendNumber('.')">.</button>
+                            <button type="button" class="btn btn-secondary r-p btn-size" onclick="setOperation('+')">+</button>
+                        </div>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="scripts/script.js"></script>
+</html>

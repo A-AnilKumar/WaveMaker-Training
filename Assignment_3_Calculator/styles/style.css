@@ -1,0 +1,40 @@
+.btn-group .btn {
+    margin-right: 4px; 
+}
+/* .btn-group .btn:last-child {
+    margin-right: 0;
+} */
+
+.form-control{
+    margin-bottom: 11px;
+    padding: 2.375rem .75rem;
+    text-align: end;
+    font-size: 30px;
+}
+.btn-size{
+    border-radius: 10px;
+    width: 150px; 
+    height: 50px;
+}
+
+.btn-eq-size{
+    width: 150px; 
+    height: 50px;
+}
+
+.btn-zero-size{
+    width: 250px; 
+    height: 50px;
+}
+
+.width-10{
+    width: 10%;
+}
+
+.width-20{
+    width: 10%;
+}
+
+.width-fit-content{
+    width: fit-content;
+}
